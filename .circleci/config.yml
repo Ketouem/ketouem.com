@@ -1,0 +1,30 @@
+version: 2.0
+
+defaults: &defaults
+  docker:
+    - image: jess/awscli
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Install Hugo
+          command: |
+            set -ex &&
+            apk add --no-cache wget make git &&
+            wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.27.1/hugo_0.27.1_Linux-64bit.tar.gz &&
+            tar -xzf /tmp/hugo.tar.gz -C /tmp &&
+            ln -s /tmp/hugo /usr/local/bin/hugo
+      - run:
+          name: Build site
+          command: make install && make build
+      - run:
+          name: Check built site
+          command: test -e site/public/index.html
+      - run:
+          name: Deploy to bucket
+          command: aws s3 cp --recursive site/public/ s3://ketouem.com/ --acl public-read
+      - store_artifacts:
+          path: site/public
