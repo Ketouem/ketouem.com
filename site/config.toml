@@ -47,12 +47,15 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     position = "[Senior Software Engineer @ Enovacom - Surycat](https://www.enovacom.fr/solutions/enovacom-surycat-alerting.html)"
     livesIn = "[Boulogne-Billancourt, France](https://www.google.fr/maps/place/Boulogne-Billancourt/@48.8374891,2.2253054,14z)"
     scope = [
-        "UX for [member dashboard](#)",
-        "Maintainer for [awesome-project](#)",
-        "Open Source [community management](#)"
+        "Backend software engineer",
+        "DevOps enthusiast"
       ]
-    biography = """Jane Powers is plain awesome. He worked at Corp A and B and is open for new work.
-Even new lines and other markdown styles are working within the bio."""
+    biography = """Jack of all IT related trades, with main focus on:
+
+    - microservices
+    - cloud infrastructure
+    - development tooling
+    - CI & CD pipelines"""
 
   # Contact form settings
 
@@ -84,8 +87,8 @@ Even new lines and other markdown styles are working within the bio."""
     emailPlaceholder = "Email"
     messagePlaceholder = "Message"
     buttonText = "Send it"
-    success = "Thank you for contacting us."
-    error = "Message could not be send. Please contact us at "
+    success = "Thank you for reaching out to me !"
+    error = "Message could not be send. Please contact me at ketouem[at]gmail[dot]com"
 
     # Google invisible captcha
     #[params.contact.captcha]
@@ -103,6 +106,12 @@ Even new lines and other markdown styles are working within the bio."""
 
   # Social settings
   # You may change these with your social links or add others
+
+  [[params.social]]
+    title = "CV"
+    icon = "fa-file-pdf-o"
+    link = "https://public-dist.s3.amazonaws.com/cv.pdf"
+    target = "_blank"
 
   [[params.social]]
     title = "LinkedIn"
