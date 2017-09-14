@@ -72,7 +72,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
 
-    email = "ketouem@email.com"
+    email = "ketouem@gmail.com"
 
     # It is possible to substitute formspring with other providers
     # as an example the mailout plugin from caddy.
