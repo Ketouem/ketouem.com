@@ -86,7 +86,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     namePlaceholder = "Name"
     emailPlaceholder = "Email"
     messagePlaceholder = "Message"
-    buttonText = "Send it"
+    buttonText = "Send !"
     success = "Thank you for reaching out to me !"
     error = "Message could not be send. Please contact me at ketouem[at]gmail[dot]com"
 
