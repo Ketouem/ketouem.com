@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://ketouem.com" #without ending slash
+baseurl = "https://ketouem.com" #without ending slash
 languageCode = "en-us"
 title = "Ketouem - Cyril Thomas"
 theme = "hugo-identity-theme"
