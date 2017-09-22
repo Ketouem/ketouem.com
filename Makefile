@@ -6,4 +6,4 @@ install:
 	git submodule update
 
 build:
-	hugo --source ./site
+	hugo --source ./site --baseUrl "//ketouem.com"
