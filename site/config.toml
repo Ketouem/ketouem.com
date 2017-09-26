@@ -145,9 +145,9 @@ googleAnalytics = "UA-107116907-1"
     copyright = "Cyril Thomas"
 
   # Page license
-  [params.license]
-    link = "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
-    name = "CC-BY-SA-4.0"
+  # [params.license]
+  #   link = "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  #   name = "CC-BY-SA-4.0"
 
   # Credits
   [[params.credits]]
@@ -156,7 +156,12 @@ googleAnalytics = "UA-107116907-1"
     # Text will be used to explain the credit
     text = "Design by"
     link = "https://html5up.net"
-
+  [[params.credits]]
+    # Title is used as URL text
+    title = "Hugo"
+    # Text will be used to explain the credit
+    text = "Made with ♥ and"
+    link = "https://gohugo.io"
   # Optional piwik tracking
   #[params.analytics.piwik]
   #  URL = "https://stats.example.com"
