@@ -13,6 +13,8 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
 
 [params]
 
+  description = "Senior backend software engineer"
+
   # Images settings
   # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
   # You may place your images in corresponding folders and then set only filenames below to
