@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://ketouem.com" #without ending slash
 languageCode = "en-us"
-title = "Ketouem - Cyril Thomas"
+title = "Ketouem - Cyril Thomas - Senior Backend Software Engineer / DevOps"
 theme = "hugo-identity-theme"
 themesDir = "./themes"
 enableRobotsTXT = true
@@ -14,7 +14,7 @@ googleAnalytics = "UA-107116907-1"
 
 [params]
 
-  description = "Senior backend software engineer"
+  description = "Cyril Thomas - Ketouem - Senior Backend Software Engineer / DevOps"
 
   # Images settings
   # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
