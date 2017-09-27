@@ -11,3 +11,6 @@ routes:
       headers:
         Cache-Control: "public, must-revalidate, proxy-revalidate, max-age=0"
       gzip: true
+    - route: "robots\\.txt$"
+      headers:
+        Content-Type: "text/plain; charset=utf-8"
