@@ -33,3 +33,14 @@ chrome-user-data
 *.swo
 *react*min*.js
 !src/node_modules
+
+# Compiled files
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+
+# Module directory
+.terraform/
+
+# Variable values for development
+terraform.tfvars
