@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/Ketouem/ketouem.com.svg?style=svg)](https://circleci.com/gh/Ketouem/ketouem.com)
 
-Front-end code of [ketouem.com](http://www.ketouem.com)
+Front-end code of [ketouem.com](https://ketouem.com)
 
 Built with [Hugo](https://gohugo.io/), design courtesy of [Hugo Identity](https://themes.gohugo.io/hugo-identity-theme/).
 
