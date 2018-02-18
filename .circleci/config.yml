@@ -16,16 +16,60 @@ jobs:
             apk add --no-cache wget make git &&
             wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.27.1/hugo_0.27.1_Linux-64bit.tar.gz &&
             tar -xzf /tmp/hugo.tar.gz -C /tmp &&
-            go get -v github.com/bep/s3deploy &&
             ln -s /tmp/hugo /usr/local/bin/hugo
       - run:
           name: Build site
           command: make install && make build
-      - run:
-          name: Check built site
-          command: test -e site/public/index.html
-      - run:
-          name: Deploy to bucket
-          command: s3deploy -v -bucket ketouem.com -source site/public/ -region=$AWS_DEFAULT_REGION -secret=$AWS_SECRET_ACCESS_KEY -key=$AWS_ACCESS_KEY_ID
       - store_artifacts:
           path: site/public
+      - persist_to_workspace:
+          root: .
+          paths:
+            - site/public/*
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Check built site
+          command: test -e /tmp/workspace/site/public/index.html
+
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Install s3deploy
+          command: |
+            set -ex &&
+            apk add --no-cache git &&
+            go get -v github.com/bep/s3deploy
+      - run:
+          name: Deploy to bucket
+          command: s3deploy -v -bucket ketouem.com -source /tmp/workspace/site/public/ -region=$AWS_DEFAULT_REGION -secret=$AWS_SECRET_ACCESS_KEY -key=$AWS_ACCESS_KEY_ID
+
+workflows:
+  version: 2
+  build-test-deploy:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /.*/
+      - test:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /.*/
+      - deploy:
+          requires:
+            - test
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only:
+                - master
