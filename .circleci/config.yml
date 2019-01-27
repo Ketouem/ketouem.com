@@ -71,6 +71,7 @@ workflows:
             tags:
               only: /.*/
       - deploy:
+          context: aws-creds
           requires:
             - test
           filters:
