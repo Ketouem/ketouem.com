@@ -2,7 +2,7 @@ version: 2.0
 
 defaults: &defaults
   docker:
-    - image: golang:1.9-alpine
+    - image: cimg/go:1.15
 
 jobs:
   build:
@@ -13,10 +13,9 @@ jobs:
           name: Install Hugo & s3deploy
           command: |
             set -ex &&
-            apk add --no-cache wget make git &&
             wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.27.1/hugo_0.27.1_Linux-64bit.tar.gz &&
             tar -xzf /tmp/hugo.tar.gz -C /tmp &&
-            ln -s /tmp/hugo /usr/local/bin/hugo
+            sudo ln -s /tmp/hugo /usr/local/bin/hugo
       - run:
           name: Build site
           command: make install && make build
@@ -44,7 +43,6 @@ jobs:
           name: Install s3deploy
           command: |
             set -ex &&
-            apk add --no-cache git &&
             go get -v github.com/bep/s3deploy
       - run:
           name: Deploy to bucket
