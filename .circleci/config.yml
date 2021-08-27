@@ -13,7 +13,7 @@ jobs:
           name: Install Hugo & s3deploy
           command: |
             set -ex &&
-            wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.27.1/hugo_0.27.1_Linux-64bit.tar.gz &&
+            wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.87.0/hugo_0.87.0_Linux-64bit.tar.gz &&
             tar -xzf /tmp/hugo.tar.gz -C /tmp &&
             sudo ln -s /tmp/hugo /usr/local/bin/hugo
       - run:
