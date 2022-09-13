@@ -43,7 +43,7 @@ jobs:
           name: Install s3deploy
           command: |
             set -ex &&
-            go get -v github.com/bep/s3deploy
+             go install github.com/bep/s3deploy/v2@latest
       - run:
           name: Deploy to bucket
           command: |
