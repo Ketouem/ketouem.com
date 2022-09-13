@@ -2,7 +2,13 @@
     "title": "Experience",
     "experience": [
         {
-            "timeperiod": "July 2017 - Present",
+            "timeperiod": "March 2022 - Present",
+            "company": "Viceversa (ex Barney)",
+            "website": "",
+            "description": "Senior Cloud Engineer / DevOps  — Enhanced the usability and security of cloud ressources following best practices. Guided the development team through AWS services."
+        },
+        {
+            "timeperiod": "July 2017 - December 2021",
             "company": "Enovacom (Orange Business Services Subsidiary)",
             "website": "https://www.enovacom.com",
             "description": "Senior Software Engineer / DevOps  — Acted as a cloud architect (AWS) for the Surycat solution giving health professionals a Saas solution to manage notifications during crisis. Contributed to the creation of an API using severless technologies."
