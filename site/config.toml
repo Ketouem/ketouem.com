@@ -8,3 +8,6 @@ enableRobotsTXT = true
 
 # Disable unnecessary kinds
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS"]
+
+[params]
+    gaMeasurementID = "G-TMZP4VXPET"
