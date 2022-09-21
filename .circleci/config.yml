@@ -19,12 +19,10 @@ jobs:
       - run:
           name: Build site
           command: make install && make build
-      - store_artifacts:
-          path: site/public
       - persist_to_workspace:
           root: .
           paths:
-            - site/public/*
+            - build/*
   test:
     <<: *defaults
     steps:
@@ -32,7 +30,7 @@ jobs:
           at: /tmp/workspace
       - run:
           name: Check built site
-          command: test -e /tmp/workspace/site/public/index.html
+          command: test -e /tmp/workspace/build/index.html
 
   deploy:
     <<: *defaults
@@ -48,7 +46,7 @@ jobs:
           name: Deploy to bucket
           command: |
             s3deploy -v -bucket ketouem.com \
-                        -source /tmp/workspace/site/public/ \
+                        -source /tmp/workspace/build/ \
                         -distribution-id $DISTRIBUTION_ID \
                         -region $AWS_DEFAULT_REGION \
                         -secret $AWS_SECRET_ACCESS_KEY \

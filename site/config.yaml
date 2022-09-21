@@ -1,0 +1,146 @@
+baseURL: http://ketouem.com/
+languageCode: en-us
+title: Ketouem - Cyril Thomas - Senior ☁️ Engineer / DevOps
+theme: hugo-profile
+
+# googleAnalytics: G-TMZP4VXPET
+
+params:
+  favicon: "/favicon.ico"
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: dark
+
+  color:
+    textColor: "#F5F5F5"
+    secondaryTextColor: "#F5F5F5"
+    backgroundColor: "#313552"
+    primaryColor: "#F1E0AC"
+    secondaryColor: "#30475E" 
+
+  hero:
+    enable: true
+    intro: "Hello world! I'm"
+    title: "Cyril Thomas"
+    subtitle: "(Ketouem)"
+    content: "Senior software engineer / DevOps 🤖, based in 🇫🇷. Yes, I will put stuff in the ☁️ for food."
+    image: "/images/cyril.png"
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://public-dist.s3.amazonaws.com/cv.pdf"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Ketouem
+        - icon: fab fa-linkedin
+          url: https://fr.linkedin.com/in/0cyrilthomas
+        - icon: fab fa-stack-overflow
+          url: https://stackoverflow.com/users/1629755/ketouem
+
+  experience:
+    enable: true
+    items:
+      - job: "Senior Cloud Engineer / DevOps"
+        company: "Viceversa"
+        date: "March 2022 - Present"
+        content: |
+          Enhanced the usability and security of cloud ressources following best practices. Guided the development team through AWS services.
+      - job: "Senior Software Engineer / DevOps"
+        company: "Enovacom"
+        companyUrl: "https://www.enovacom.com/"
+        date: "July 2017 - December 2021"
+        content: |
+          Acted as a cloud architect (AWS) for the Surycat solution giving health professionals a Saas solution to manage notifications during crisis. Contributed to the creation of an API using severless technologies.
+      - job: "Software Developer"
+        company: "Klaxit"
+        companyUrl: "https://www.klaxit.com"
+        date: "October 2016 - May 2017"
+        content: |
+          Worked on the backend part (backoffice & API) using Rails. Created a tool allowing the dump of production database and their restore in a development environment.
+      - job: "Software Engineer"
+        company: "Tinyclues"
+        companyUrl: "https://www.tinyclues.com"
+        date: "March 2016 - September 2016"
+        content: |
+          Helped streamlining development environment with Docker. Rewrote an event tracking API using Python 3 & Flask.
+      - job: "Software Developer"
+        company: "Optiflows"
+        date: "September 2014 - February 2016"
+        content: |
+          Worked on Surycat, a notification appliance that gets health professionals on track as soon as the situation requires it.
+      - job: "Quality Assurance Engineer"
+        company: "SmartFocus"
+        companyUrl: "https://www.smartfocus.com"
+        date: "November 2011 - June 2014"
+        content: |
+          Specialized in testing automation. Created a framework (based on Python & Selenium) to allow the QA team to write functional (front-end & API) tests faster.
+      - job: Software Developer - Internship
+        company: "Groupe Mutualiste RATP"
+        companyUrl: "https://mutuelleratp.fr"
+        date: "June 2010 - August 2010"
+        content: |
+          Developped backoffice applications for inventory and billing management using Delphi & PostgreSQL.
+
+  education:
+    enable: true
+    items:
+      - title: "MSc in Computing"
+        school:
+          name: "Griffith College, Dublin, Ireland"
+          url: "https://www.griffith.ie/"
+        content: |
+          Thesis: "Relevance of glyph recognition and augmented reality in desktop applications with AForge.NET and GRATF."
+        date: "September 2010 - August 2011"
+      - title: "Expert en Informatique et Système d'Information (Niveau I - Ingénieur)"
+        school:
+          name: "EPSI Paris, Levallois-Perret, France"
+          url: "https://www.epsi.fr/"
+        date: "September 2008 - September 2011"
+
+  achievements:
+    enable: true
+    items:
+      - title: "AWS Certified Developer - Associate"
+        date: "2021"
+        url: "https://public-dist.s3.amazonaws.com/aws-certified-developer-associate-certificate.pdf"
+        content: |
+          This credential helps organizations identify and develop talent with critical skills for implementing cloud initiatives. Earning AWS Certified Developer – Associate validates the ability to write and deploy cloud-based applications.
+      - title: "AWS Certified Solutions Architect - Associate"
+        date: "2019"
+        url: "https://public-dist.s3.amazonaws.com/aws-certified-solutions-architect-associate-certificate.pdf"
+        content: |
+          The industry-recognized AWS Certified Solutions Architect - Associate (SAA) showcases knowledge and skills in AWS technology across a wide range of AWS services. The focus of this certification is on the design of cost and performance optimized solutions, demonstrating a strong understanding of the AWS Well-Architected Framework.
+
+  about:
+    enable: true
+    title: "About Me"
+    content: |-
+      I'm a technologist with more than 10 years experience in various roles (QA, backend development, cloud engineer, DevOps).
+      During my career I've found myself a passion working with public ☁️ providers (mainly AWS) and helping teams making the most of it.
+    skills:
+      enable: true
+      title: "Here are the few technologies I've been working with recently: "
+      items:
+        - Terraform
+        - Terragrunt
+        - Packer
+        - Docker
+        - AWS ECS
+        - AWS CDK
+        - Serverless technologies (Lambda, API Gateway)
+        - TypeScript
+        - Python
+        - Bash
+
+  contact:
+    enable: true
+    content: |
+      If you have any business enquiries, questions or just want to say hi, feel free to contact me.
+    email: "ketouem@gmail.com?subject=Hello%20Cyril"
+    btnName: "Send Email"
+
+  footer:
+    recentPosts: false
