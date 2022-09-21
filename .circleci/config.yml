@@ -18,7 +18,7 @@ jobs:
             sudo ln -s /tmp/hugo /usr/local/bin/hugo
       - run:
           name: Build site
-          command: make install && make build
+          command: make install && make build HUGO_GOOGLEANALYTICS=$HUGO_GOOGLEANALYTICS
       - persist_to_workspace:
           root: .
           paths:

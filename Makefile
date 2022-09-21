@@ -1,3 +1,5 @@
+HUGO_GOOGLEANALYTICS ?=
+
 dev:
 	hugo server --source ./site
 
@@ -6,4 +8,4 @@ install:
 	git submodule update
 
 build:
-	hugo --source ./site  --destination ../build --baseUrl "//ketouem.com/"
+	HUGO_GOOGLEANALYTICS=$(HUGO_GOOGLEANALYTICS) hugo --source ./site  --destination ../build --baseUrl "//ketouem.com/"

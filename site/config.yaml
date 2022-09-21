@@ -3,8 +3,6 @@ languageCode: en-us
 title: Ketouem - Cyril Thomas - Senior ☁️ Engineer / DevOps
 theme: hugo-profile
 
-# googleAnalytics: G-TMZP4VXPET
-
 params:
   favicon: "/favicon.ico"
 
