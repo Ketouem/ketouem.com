@@ -43,7 +43,7 @@ params:
     items:
       - job: "Senior Cloud Engineer / DevOps"
         company: "Viceversa"
-        date: "March 2022 - Present"
+        date: "March 2022 - October 2022"
         content: |
           Enhanced the usability and security of cloud ressources following best practices. Guided the development team through AWS services.
       - job: "Senior Software Engineer / DevOps"
