@@ -41,6 +41,9 @@ params:
   experience:
     enable: true
     items:
+      - job: "Senior Solution Architect"
+        company: "Dalma"
+        date: "November 2022 - Ongoing"
       - job: "Senior Cloud Engineer / DevOps"
         company: "Viceversa"
         date: "March 2022 - October 2022"
